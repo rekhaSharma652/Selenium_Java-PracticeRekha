@@ -8,7 +8,7 @@ public class armstrong {
 		int r;
 		int n=153;
 		actual=n;
-		while(n > 0)
+		while(n >= 0)
 		{
 			r=n%10;
 			temp=(temp*10)+r;
