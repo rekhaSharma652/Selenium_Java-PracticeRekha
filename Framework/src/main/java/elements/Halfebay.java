@@ -14,7 +14,7 @@ public class Halfebay {
 		// TODO Auto-generated method stub
 		driver= new FirefoxDriver();
 		driver.manage().window().maximize();
-		driver.get("Http://www.google.com");
+		driver.get("Http://www.yahoo.com");
 	}
 @AfterMethod
 public void TearDown()
