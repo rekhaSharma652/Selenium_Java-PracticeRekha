@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Maven Test Automation">
+<test name="End To End Test">
+    <!-- <parameter name="browser" value="Chrome"/>
+     -->
+    <classes>
+         <class name="com.QATest.DemoTest"/>
+         <class name="com.QATest.DemoTest1"/>
+         <class name="com.QATest.DemoTest2"/>
+    </classes>
+</test>
+</suite>

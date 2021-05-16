@@ -1,0 +1,76 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>MavenDemoTest</groupId>
+  <artifactId>MavenDemoTest</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <dependencies>
+  <dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>6.11</version>
+    <scope>test</scope>
+</dependency>
+  <dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>3.6.0</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi</artifactId>
+    <version>3.13</version>
+</dependency>
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-ooxml</artifactId>
+    <version>3.11</version>
+ </dependency>
+</dependencies>
+  
+  <properties>
+  <maven.test.skip>false</maven.test.skip>
+   <maven.compiler.source>1.7</maven.compiler.source>
+   <maven.compiler.target>1.7</maven.compiler.target>
+ </properties>
+ 
+ <build>
+    <plugins>
+        <plugin>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.1</version>
+            <configuration>
+                <fork>true</fork>
+                <executable>C:\Program Files\Java\jdk-15.0.1\bin\javac.exe</executable>
+            </configuration>
+        </plugin>
+        <plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.19.1</version>
+				<configuration>
+				<!-- 
+				<forkCount>0</forkCount>
+				 -->
+				 <suiteXmlFiles>
+					<suiteXmlFile>C:/Users/LENOVO/eclipse-workspace/MavenDemoTest/src/test/resources/EndtoEndsuite.xml</suiteXmlFile>
+				</suiteXmlFiles>
+	
+				<!-- 
+				<includes>
+						<include>EndToEndTest.java</include>
+						<include>RegressionTest.java</include>
+						<include>FunctionalTest.java</include>
+					</includes>
+				 -->
+                     
+					
+				</configuration>
+			</plugin>
+			
+        
+    </plugins>
+</build>
+ 
+ 
+</project>
